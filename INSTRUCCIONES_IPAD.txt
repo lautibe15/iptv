@@ -1,0 +1,17 @@
+TV PERSONAL — DESDE IPAD
+
+El proyecto ya incluye Telefe, El Trece y TyC Sports y permite agregar/editar/borrar enlaces .m3u8 desde la app.
+
+Para generar el APK con GitHub se necesita que estos archivos estén en el repositorio conservando sus carpetas. El workflow correcto vive en:
+.github/workflows/build-apk.yml
+
+Después:
+1. Abrí el repositorio en GitHub.
+2. Entrá en Actions.
+3. Elegí Build APK.
+4. Run workflow.
+5. Cuando finalice, abrí la ejecución y descargá el artifact TVPersonal-APK.
+6. Descomprimilo: adentro está app-debug.apk.
+7. Pasá ese APK al TV Box e instalalo habilitando instalación desde fuentes desconocidas para el gestor de archivos/navegador utilizado.
+
+IMPORTANTE: el archivo build-apk.yml de la raíz es solo una copia visible. Para que GitHub Actions lo detecte debe estar en .github/workflows/build-apk.yml, como ya viene dentro de este proyecto.
